@@ -8,16 +8,6 @@ use Transbank\Webpay\Webpay;
 
 <?php
 
-/**
-* @category   Plugins/SDK
-* @author     Allware Ltda. (http://www.allware.cl)
-* @copyright  2018 Transbank S.A. (http://www.transbank.cl)
-* @date       May 2018
-* @license    GNU LGPL
-* @version    2.0.4
-* @link       http://transbankdevelopers.cl/
- */
-
 /** Configuracion parametros de la clase Webpay */
 $sample_baseurl = $_SERVER['REQUEST_SCHEME'] . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'];
 
