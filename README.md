@@ -14,15 +14,14 @@ Con el código fuente del proyecto en tu computador, puedes ejecutar en la raíz
 
 Para instalar las dependencia puedes ejecutar el siguiente comando en tu consola:
 ```bash
-docker-compose run --rm -w /var/www web composer install
+./update
 ```
 
 ### 2. Ejecutar ejemplo
 
 ```bash
-docker-compose up -d && \
+./start
 ```
-También puedes iniciar el proyecto simplemente ejecutando el archivo `start` en la raíz del proyecto
 
 En ambos casos el proyecto se ejecutará en http://localhost:9000 (y fallará en caso de que el puerto 9000 no esté disponible)
 
