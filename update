@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+docker-compose run --rm -w /var/www web composer update
