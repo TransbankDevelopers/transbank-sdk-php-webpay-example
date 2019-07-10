@@ -6,4 +6,4 @@ services:
       - "9000:80"
     volumes:
       - .:/app
-      - ./src/:/var/www
+      - .:/var/www

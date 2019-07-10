@@ -1,0 +1,21 @@
+version: '3'
+services:
+  web:
+    build: ../src
+    ports:
+      - "8000:80"
+    volumes:
+      - ../src:/app
+      - ../src:/var/www
+  cypress:
+    image: "cypress/included:3.2.0"
+    depends_on:
+      - web
+    environment:
+      - CYPRESS_baseUrl=http://web
+    working_dir: /e2e
+    volumes:
+      - .:/e2e
+networks:
+  default:
+    driver: 'bridge'
