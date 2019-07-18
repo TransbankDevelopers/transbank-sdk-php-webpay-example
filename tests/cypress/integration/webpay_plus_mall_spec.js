@@ -32,13 +32,15 @@ describe('Using Webpay Plus Mall', function() {
 
     // Formulario Autenticación banco
     cy.get('#control frame[name=transicion]').then(($frame) => {
-      cy.wrap($frame.contents().find('form[name=frm]')).find('#rutClient').should('be.visible').type('11.111.111-1')
-      cy.wrap($frame.contents().find('form[name=frm]')).find('#passwordClient').should('be.visible').type('123')
-      cy.wrap($frame.contents().find('form[name=frm]')).find('input[type=submit]').should('be.visible').click()
+      cy.wrap($frame.contents().find('form[name=frm]')).find('#rutClient').type('11.111.111-1')
+      cy.wrap($frame.contents().find('form[name=frm]')).find('#passwordClient').type('123')
+      cy.wrap($frame.contents().find('form[name=frm]')).find('input[type=submit]').click()
     })
+    
+    cy.wait(1000)
 
     cy.get('#control frame[name=transicion]').then(($frame) => {
-      cy.wrap($frame.contents().find('body')).find('input[type=submit]').should('be.visible').click()
+      cy.wrap($frame.contents().find('form[name=frm]')).find('input[type=submit]').click()
     })
 
     // Resultado

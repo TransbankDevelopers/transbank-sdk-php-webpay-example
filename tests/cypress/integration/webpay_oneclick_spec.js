@@ -28,9 +28,13 @@ describe('Using Webpay Oneclick', function() {
       cy.wrap($frame.contents().find('form[name=frm]')).find('input[type=submit]').should('be.visible').click()
     })
 
+    cy.wait(1000)
+    
     cy.get('#control frame[name=transicion]').then(($frame) => {
-      cy.wrap($frame.contents().find('body')).find('input[type=submit]').should('be.visible').click()
+      cy.wrap($frame.contents().find('form[name=frm]')).find('input[type=submit]').click()
     })
+
+    cy.wait(4000)
 
     // Authorizar
     cy.contains('Transacción ACEPTADA por webpay')
