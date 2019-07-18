@@ -4,3 +4,4 @@ composer.lock
 tests/cypress/videos/*
 tests/cypress/screenshots/*
 .DS_Store
+.built

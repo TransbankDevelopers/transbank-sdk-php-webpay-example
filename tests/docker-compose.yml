@@ -1,6 +1,6 @@
 version: '3'
 services:
-  web:
+  test-web:
     build: ../src
     ports:
       - "8000:80"
@@ -8,14 +8,14 @@ services:
       - ../src:/app
       - ../src:/var/www
   cypress:
-    image: "cypress/included:3.4.0"
+    image: cypress/included:3.4.0
     depends_on:
-      - web
+      - test-web
     environment:
-      - CYPRESS_baseUrl=http://web
+      - CYPRESS_baseUrl=http://test-web
     working_dir: /e2e
     volumes:
       - .:/e2e
 networks:
   default:
-    driver: 'bridge'
+    driver: bridge
