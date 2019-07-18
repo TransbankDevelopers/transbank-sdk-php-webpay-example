@@ -28,7 +28,7 @@ describe('Using Webpay Plus Mall', function() {
     cy.contains('Sin Cuotas')
     cy.get('form button.button.new-marg.next-padd').should('not.have.class', 'disabled').should('be.visible').click()
 
-    cy.wait(4000)
+    cy.wait(6000)
 
     // Formulario Autenticación banco
     cy.get('#control frame[name=transicion]').then(($frame) => {
