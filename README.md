@@ -10,17 +10,57 @@ Para ejecutar el proyecto es necesario tener:
 ## Ejecutar ejemplo
 Con el código fuente del proyecto en tu computador, puedes ejecutar en la raíz del proyecto los siguientes pasos:
 
-### 1. Instalar dependencias
+### 1. Construir imágenes e instalar dependencias
 
 Para instalar las dependencia puedes ejecutar el siguiente comando en tu consola:
 ```bash
-./update
+make build
+make update
 ```
 
 ### 2. Ejecutar ejemplo
 
 ```bash
-./start
+make start
+```
+
+## Ejecutar Tests
+
+Asegurate de tener las imagenes construidas con `make build` y luego ejecuta
+
+```bash
+make test
+```
+
+## Otras funcionalidades
+
+### Detener las imagenes
+
+```bash
+make stop
+```
+
+o también
+
+```bash
+make kill
+```
+
+### Conectarte a shell del contenedor
+
+```bash
+./shell
+```
+Puedes también pasar un usuario en especifico
+
+```bash
+./shell <usuario>
+```
+
+### Reconstruir las imagenes
+
+```bash
+make clean build
 ```
 
 En ambos casos el proyecto se ejecutará en http://localhost:9000 (y fallará en caso de que el puerto 9000 no esté disponible)
