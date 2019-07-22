@@ -4,7 +4,7 @@ describe('Using Webpay Plus', function() {
 
     cy.contains('Webpay Plus Normal').should('be.visible').click()
 
-    cy.contains('Continuar »').should('be.visible').click()
+    cy.contains('Continuar').should('be.visible').click()
 
     cy.contains('Selecciona tu medio de pago')
 
@@ -44,7 +44,7 @@ describe('Using Webpay Plus', function() {
 
     // Resultado
 
-    cy.contains('Continuar »').should('be.visible').click()
+    cy.contains('Continuar').should('be.visible').click()
     cy.contains('Ir a detalle de la compra').scrollIntoView().should('be.visible').click()
     cy.contains('Transacion Finalizada')
     cy.get('input[value="Anular Transacción »"]').should('be.visible').click()

@@ -7,3 +7,4 @@ WORKDIR /app
 COPY . /app
 RUN chmod 0777 ./composer-install.sh
 RUN ./composer-install.sh
+EXPOSE 80
