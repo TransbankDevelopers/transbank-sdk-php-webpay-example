@@ -4,7 +4,7 @@ describe('Using Webpay Plus Deferred', function() {
 
     cy.contains('Webpay Plus Captura Diferida').click()
 
-    cy.contains('Continuar »').click()
+    cy.contains('Continuar').click()
     
     // Formulario Tarjeta de Crédito
     cy.get('form button').should('have.class', 'disabled')
@@ -44,7 +44,7 @@ describe('Using Webpay Plus Deferred', function() {
       .invoke('attr', 'target', null)
 
     // Resultado
-    cy.contains('Continuar »').click()
+    cy.contains('Continuar').click()
     cy.contains('Ir a detalle de la compra').scrollIntoView().should('be.visible').click()
     cy.get('input[type=submit]').click()
     cy.contains('Transación Finalizada')

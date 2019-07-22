@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "cypress": "^3.4.0",
+    "cypress-log-to-output": "^1.0.4"
+  }
+}

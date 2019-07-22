@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejemplos Webpay</title>
+</head>
+<body>
 <?php
 require_once '../vendor/autoload.php';
 
@@ -99,3 +108,6 @@ echo "<h2>Step: " . $tx_step . "</h2>";
 <?php } ?>
 <br>
 <a href="../..">&laquo; volver a index</a>
+
+</body>
+</html>

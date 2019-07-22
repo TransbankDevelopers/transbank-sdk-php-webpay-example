@@ -3,5 +3,6 @@
 composer.lock
 tests/cypress/videos/*
 tests/cypress/screenshots/*
+tests/node_modules/*
 .DS_Store
 .built

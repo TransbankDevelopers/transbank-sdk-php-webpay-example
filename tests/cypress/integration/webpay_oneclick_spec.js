@@ -4,7 +4,7 @@ describe('Using Webpay Oneclick', function() {
 
     cy.contains('Webpay OneClick Normal').should('be.visible').click()
 
-    cy.contains('Continuar »').should('be.visible').click()
+    cy.contains('Continuar').should('be.visible').click()
 
     // Formulario Tarjeta de Crédito
     cy.get('form button').should('have.class', 'disabled').should('be.visible')
@@ -38,15 +38,15 @@ describe('Using Webpay Oneclick', function() {
 
     // Authorizar
     cy.contains('Transacción ACEPTADA por webpay')
-    cy.contains('Continuar »').should('be.visible').click()
+    cy.contains('Continuar').should('be.visible').click()
 
     // Reversa
     cy.contains('Transacción ACEPTADA por webpay')
-    cy.contains('Continuar »').should('be.visible').click()
+    cy.contains('Continuar').should('be.visible').click()
 
     // Finalizar inscripción
     cy.contains('Transacción ACEPTADA por webpay')
-    cy.contains('Continuar »').should('be.visible').click()
+    cy.contains('Continuar').should('be.visible').click()
 
     // Remove user
     cy.contains('Transacción ACEPTADA por webpay')
