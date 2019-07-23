@@ -2,8 +2,11 @@ const assert = require('assert');
 
 describe('Using Webpay Plus', () => {
     it('should let you pay with credit card', () => {
-        browser.url('http://localhost:9000');
+        browser.url('http://web');
+        console.log(browser.getText('html'));
         $('a=Webpay Plus Normal').click();
+        console.log('Despues de clickear el link');
+        console.log(browser.getText('html'));
         $('input[value="Continuar »"]').click();
         // Change this, it's awful, just leave it to test travis
         $('h1=Selecciona tu medio de pago').waitForExist();

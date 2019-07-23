@@ -15,7 +15,5 @@ cache:
     - ~/.cache
 install:
   - cd tests2 && npm install
-before_script:
-  - cd .. && make build start
 script:
-  - cd tests2 && npm run test
+  - cd .. && make build test

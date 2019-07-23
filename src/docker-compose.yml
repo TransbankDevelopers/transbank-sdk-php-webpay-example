@@ -7,3 +7,12 @@ services:
     volumes:
       - .:/app
       - .:/var/www
+  test:
+    build: ../tests2
+    depends_on:
+      - web
+    command: curl http://web
+networks:
+  default:
+    driver: bridge
+    

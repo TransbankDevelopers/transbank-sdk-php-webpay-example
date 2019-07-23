@@ -13,7 +13,7 @@ start: .built
 	@echo "============================================\n🌎  Web server: http://localhost:9000/\n============================================"
 
 test: .built
-	cd $(TESTS) && docker-compose up --exit-code-from cypress
+	cd $(APP) && docker-compose up --exit-code-from test
 
 stop:
 	cd $(APP) && docker-compose stop

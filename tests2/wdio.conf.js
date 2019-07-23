@@ -56,7 +56,7 @@ exports.config = {
         //
         browserName: 'chrome',
         chromeOptions: {
-          args: ['--no-sandbox','--headless', '--disable-gpu', '--window-size=1280,1000']
+          args: ['--no-sandbox','--headless', '--disable-gpu', '--window-size=1280,1000', '--disable-web-security']
         }
       }],
     //
@@ -90,7 +90,7 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'http://localhost:9000',
+    baseUrl: 'http://web:9000',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 30000,
