@@ -12,12 +12,6 @@
   "minimum-stability": "dev",
   "require": {
     "php": "^7.1.3",
-    "transbank/transbank-sdk": "dev-feat/webpay-support-php7"
-  },
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "https://github.com/TransbankDevelopers/transbank-sdk-php"
-    }
-  ]
+    "transbank/transbank-sdk": "1.5.3"
+  }
 }
