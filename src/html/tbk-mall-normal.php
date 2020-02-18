@@ -36,14 +36,12 @@ switch ($action) {
             [
                 "storeCode" => "597044444402",
                 "amount" => 1200,
-                "buyOrder" => rand(),
-                "sessionId" => $sessionId
+                "buyOrder" => rand()
             ],
             [
                 "storeCode" => "597044444403",
                 "amount" => 2500,
-                "buyOrder" => rand(),
-                "sessionId" => $sessionId
+                "buyOrder" => rand()
             ]
         ];
 
